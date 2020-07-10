@@ -1,1 +1,1 @@
-const app = new app()
+const app = new App()
