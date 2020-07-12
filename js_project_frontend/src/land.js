@@ -5,6 +5,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 	Land.createLand()
+	Land.getAllLands()
 })
 
 class Land {
@@ -39,6 +40,19 @@ class Land {
 
 
 	})
+	}
+
+	static getAllLands() {
+		fetch("http://localhost:3000/lands")
+		.then(response => response.json())
+		.then(data => {
+			data.map(c => {
+
+
+			let newLand = new Land(c)
+			newLand.addLandtoDom()
+			})
+		})
 	}
 
 
