@@ -460,3 +460,178 @@ Processing by LandsController#index as */*
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1597)
 
 
+Started GET "/lands" for ::1 at 2020-07-12 15:37:37 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.4ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 1.2ms | Allocations: 5810)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 15:39:08 -0400
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1614)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 15:39:39 -0400
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.3ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1614)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 15:49:51 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1626)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 15:51:16 -0400
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1614)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 15:56:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1615)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 15:57:37 -0400
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1597)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 16:29:36 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1615)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 16:55:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.3ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1615)
+
+
+Started GET "/lands" for ::1 at 2020-07-12 16:55:34 -0400
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1597)
+
+
+Started GET "/lands" for 127.0.0.1 at 2020-07-12 16:59:15 -0400
+Processing by LandsController#index as HTML
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1596)
+
+
+Started GET "/lands" for 127.0.0.1 at 2020-07-12 17:50:02 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandsController#index as HTML
+  [1m[36mLand Load (0.3ms)[0m  [1m[34mSELECT "lands".* FROM "lands" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Land Load (0.0ms)[0m  [1m[34mSELECT "lands".* FROM "lands" LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms | Allocations: 76681)
+
+
+  [1m[36mCACHE Land Load (0.0ms)[0m  [1m[34mSELECT "lands".* FROM "lands" LIMIT ?[0m  [["LIMIT", 11]]
+  
+NameError (undefined local variable or method `lands' for #<LandsController:0x0000000007639168>
+Did you mean?  @lands
+               and):
+  
+app/controllers/lands_controller.rb:6:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-07-12 17:50:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/lands" for ::1 at 2020-07-12 17:51:23 -0400
+Processing by LandsController#create as */*
+  Parameters: {"name"=>"Hello", "land"=>{"name"=>"Hello"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[36mLand Create (10.7ms)[0m  [1m[32mINSERT INTO "lands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hello"], ["created_at", "2020-07-12 21:51:23.874932"], ["updated_at", "2020-07-12 21:51:23.874932"]]
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[35m (91.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+Completed 204 No Content in 106ms (ActiveRecord: 102.0ms | Allocations: 2548)
+
+
+Started POST "/lands" for ::1 at 2020-07-12 17:56:20 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandsController#create as */*
+  Parameters: {"name"=>"Hello", "land"=>{"name"=>"Hello"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[36mLand Create (0.7ms)[0m  [1m[32mINSERT INTO "lands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hello"], ["created_at", "2020-07-12 21:56:20.732429"], ["updated_at", "2020-07-12 21:56:20.732429"]]
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[35m (78.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+Completed 200 OK in 94ms (Views: 1.0ms | ActiveRecord: 79.6ms | Allocations: 6060)
+
+
+Started POST "/lands" for ::1 at 2020-07-12 17:57:26 -0400
+Processing by LandsController#create as */*
+  Parameters: {"name"=>"Hello", "land"=>{"name"=>"Hello"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[36mLand Create (0.7ms)[0m  [1m[32mINSERT INTO "lands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hello"], ["created_at", "2020-07-12 21:57:26.302038"], ["updated_at", "2020-07-12 21:57:26.302038"]]
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[35m (71.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+Completed 200 OK in 81ms (Views: 0.3ms | ActiveRecord: 72.4ms | Allocations: 2504)
+
+
+Started POST "/lands" for ::1 at 2020-07-12 17:57:39 -0400
+Processing by LandsController#create as */*
+  Parameters: {"name"=>"Hi", "land"=>{"name"=>"Hi"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[36mLand Create (1.1ms)[0m  [1m[32mINSERT INTO "lands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hi"], ["created_at", "2020-07-12 21:57:39.175802"], ["updated_at", "2020-07-12 21:57:39.175802"]]
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+  [1m[35m (64.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lands_controller.rb:16:in `create'
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 65.9ms | Allocations: 2506)
+
+
