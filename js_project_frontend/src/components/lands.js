@@ -2,8 +2,12 @@ class Lands {
 	constructor() {
 		this.lands = []
 		this.adapter = new LandsAdapter()
-		//this.bindEventListeners()
+		this.initbindEventListeners()
 		this.fetchAndLoadLands()
+	}
+
+	initbindEventListeners() {
+		this.landsContainer = document.getElementById('lands-container')
 	}
 
 
@@ -19,8 +23,7 @@ class Lands {
 	}
 
 	render() {
-		const landsContainer = document.getElementById('lands-container')
-		landsContainer.innerHTML = this.lands.map(land => `<li>${land.name}</li> ${land.description}`).join(" ")
+		landsContainer.innerHTML = this.lands.map(land => land.renderLiNameAndDescription()).join(" ")
 		
 	}
 

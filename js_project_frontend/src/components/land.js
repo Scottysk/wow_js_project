@@ -4,4 +4,8 @@ class Land {
 		this.name = landJSON.name
 		this.description = landJSON.description
 	}
+
+	renderLiNameAndDescription() {
+		return `<li>${this.name}</li> ${this.description}`
+	}
 }
