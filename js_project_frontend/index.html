@@ -11,12 +11,14 @@
 
 </head>
 <body>
+	<div class="main">
+		<div class="navigation">
 
 	<h1> World of Warcraft: Lands </h1>
 
 	<script type="text/javascript" src="src/land.js"> </script>
 	<script type="text/javascript" src="src/lands.js"> </script>
-	<script type="text/javascript" src="src/adapters/LandsAdapter.js"> </script>
+	<script type="text/javascript" src="src/zone.js"> </script>
 
 	<form class="new-land-form">
 		<input type="text" placeholder="Land Name">
@@ -26,11 +28,13 @@
 	<form class="new-zone-form">
 		<input type="text" placeholder="Zone Name">
 		<input type="text" placeholder="Zone description">
+		<input type="hidden" id="land-id" value="">
 		<input type="submit" value="Add Zone Information">
 	</form>
 
 	<select class="lands-select">
 		<option> Select an area of land to see more info </option>
+	</select>
 
 
 

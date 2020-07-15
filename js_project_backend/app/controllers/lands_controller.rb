@@ -1,9 +1,9 @@
 class LandsController < ApplicationController
 
 	def index
-		lands = Land.all
+		land = Land.all
 
-		render json: lands
+		render json: land
 	end
 
 	def show

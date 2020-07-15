@@ -23,7 +23,7 @@ class ZonesController < ApplicationController
 	end
 
 	def zone_params
-		params.require(:zone).permit(:name, :description)
+		params.require(:zone).permit(:name, :description, :land_id)
 	end
 
 
