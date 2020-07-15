@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
 	Land.createLand()
 	Land.getAllLands()
+	Land.getDropDownChange()
 })
-const all = []
 
-
+let dd = document.querySelector(".lands-select")
 let land = document.querySelector(".land")
-let dropDown = document.querySelector(".land-select")
 
 
 class Land {
@@ -15,9 +14,6 @@ class Land {
 		this.name = landJSON.name;
 		this.description = landJSON.description
 		this.zones = landJSON.zones
-		this.zones = []
-		all.push(this)
-
 	}
  
 	static createLand() {
@@ -77,9 +73,10 @@ class Land {
 
 
 	static getDropDownChange() {
-		this.addEventListener("change", function(event) {
-			land.innerHTML = "";
-			console.log("event", event.target.value)
+		let select = document.querySelector(".lands-select")
+		select.addEventListener("change", function(event) {
+			landJSON.innerHTML = "";
+			event.target.value
 		})
 	}
 
