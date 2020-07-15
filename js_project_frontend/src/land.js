@@ -76,7 +76,12 @@ class Land {
 		let select = document.querySelector(".lands-select")
 		select.addEventListener("change", function(event) {
 			landJSON.innerHTML = "";
-			event.target.value
+			fetch('http://localhost:3000/lands/${event.target.value}')
+			.then(response => response.json{})
+			.then(data => data.forEach(element => {
+				let newZone = new Zone(element)
+				newZone.appZoneToDom()
+			}))
 		})
 	}
 
