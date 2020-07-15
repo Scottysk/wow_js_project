@@ -3,6 +3,7 @@ class CreateZones < ActiveRecord::Migration[6.0]
     create_table :zones do |t|
     	t.string :name
     	t.string :description
+    	t.integer :land_id
       t.timestamps
     end
   end

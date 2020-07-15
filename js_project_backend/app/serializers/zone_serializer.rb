@@ -1,0 +1,1 @@
+class ZoneSerializer < ActiveModel::Serializer

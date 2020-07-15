@@ -3,12 +3,12 @@
 document.addEventListener("DOMContentLoaded", function() {
 	Land.createLand()
 	Land.getAllLands()
+	Land.getDropDownChange()
 })
 
-let dropDown = document.querySelector(".lands-select")
+
 let land = document.querySelector(".land")
-
-
+let dropDown = document.querySelector(".lands-select")
 
 
 class Land {
@@ -64,7 +64,6 @@ class Land {
 
 
 	addLandtoDom() {
-		let land = document.querySelector(".land")
 		let p = document.createElement("p")
 		p.innerText = this.name
 		land.appendChild(p)

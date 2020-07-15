@@ -768,3 +768,28 @@ Processing by LandsController#index as */*
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 2174)
 
 
+Started GET "/lands" for ::1 at 2020-07-14 21:23:51 -0400
+  [1m[35m (19.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 6.3ms | ActiveRecord: 0.9ms | Allocations: 7380)
+
+
+Started GET "/lands" for ::1 at 2020-07-14 21:27:16 -0400
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 2191)
+
+
+Started GET "/lands" for ::1 at 2020-07-14 21:30:54 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandsController#index as */*
+  [1m[36mLand Load (0.2ms)[0m  [1m[34mSELECT "lands".* FROM "lands"[0m
+  ↳ app/controllers/lands_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 6.1ms | ActiveRecord: 0.9ms | Allocations: 7380)
+
+
