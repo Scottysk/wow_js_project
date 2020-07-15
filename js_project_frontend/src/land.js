@@ -36,6 +36,7 @@ class Land {
 			let newLand = new Land(data)
 			newLand.addLandtoDom()
 		})
+		event.target[0].value = ""
 
 
 
