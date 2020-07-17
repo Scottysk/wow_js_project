@@ -8,7 +8,7 @@ class Zone {
 
 	appendZoneToDom() {
 		let div = document.createElement("div")
-		div.setAttribute("class", "zone-box")
+		div.setAttribute("land", "zone-box")
 		div.innerHTML = `<p>${this.name} ${this.description}</p>`
 		land.appendChild(div)
 	}

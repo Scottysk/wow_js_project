@@ -9,11 +9,11 @@ let land = document.querySelector(".land")
 
 
 class Land {
-	constructor(landJSON) {
-		this.id = landJSON.id;
-		this.name = landJSON.name;
-		this.description = landJSON.description
-		this.zones = landJSON.zones
+	constructor(land) {
+		this.id = land.id;
+		this.name = land.name;
+		this.description = land.description
+		this.zones = land.zones
 	}
  
 	static createLand() {
@@ -47,24 +47,21 @@ class Land {
 
 
 	static getAllLands() {
-		let dd = document.querySelector(".lands-select")
 		fetch("http://localhost:3000/lands")
 		.then(response => response.json())
 		.then(data => {
-			data.map(c => {
+			data.map(l => {
 
 
-			let newLand = new Land(c)
-			dd.innerHTML = dd.innerHTML + `<option value="${c.id}">${c.name}</option>`
-
+			let newLand = new Land(l)
+			dd.innerHTML = dd.innerHTML + `<option value="${l.id}">${l.name}</option>`
 			newLand.addLandtoDom()
 			})
-		})
+			})
+		}
 
-	}
 
 		addLandtoDom() {
-			let land = document.querySelector(".land")
 			let p = document.createElement("p")
 			p.innerText = this.name
 			land.appendChild(p)
@@ -73,17 +70,21 @@ class Land {
 
 
 	static getDropDownChange() {
-		let select = document.querySelector(".lands-select")
-		select.addEventListener("change", function(event) {
-			landJSON.innerHTML = "";
-			fetch('http://localhost:3000/lands/${event.target.value}')
-			.then(response => response.json{})
-			.then(data => data.forEach(element => {
-				let newZone = new Zone(element)
-				newZone.appZoneToDom()
-			}))
+
+		dd.addEventListener("change", function(e) {
+			land.innerHTML = "";
+			fetch(`http://localhost:3000/lands/${e.target.value}`)
+			.then(response => response.json())
+			.then(data => {
+				console.log("data", data)
+				data.zones.map(element => {
+					let newZone = new Zone(element)
+					newZone.appendZoneToDom()
+				})
+			})
 		})
 	}
+
 
 
 
